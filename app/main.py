@@ -4,7 +4,8 @@ import logging
 import asyncio
 
 from config.env import TOKEN
-from bot.handlers.users.start_command import router as start_command_router
+from bot.handlers.users.index import router as users_router
+from bot.handlers.admin import router as admin_router
 
 bot = Bot(TOKEN)
 logging.basicConfig(
@@ -14,7 +15,8 @@ logging.basicConfig(
 
 async def root():
     dp = Dispatcher()
-    dp.include_router(start_command_router)
+    dp.include_router(admin_router)
+    dp.include_router(users_router)
     await dp.start_polling(bot)
 
 
