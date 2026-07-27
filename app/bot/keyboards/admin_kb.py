@@ -31,3 +31,12 @@ manage_movie_kb = ReplyKeyboardMarkup(
         ]
     ]
 )
+
+cancel_kb = ReplyKeyboardMarkup(
+    resize_keyboard=True,
+    keyboard=[
+        [
+            KeyboardButton(text="⬅️ Orqaga")
+        ]
+    ]
+)
