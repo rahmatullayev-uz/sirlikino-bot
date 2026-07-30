@@ -65,6 +65,7 @@ async def add_movie_name_process(message: Message, state: FSMContext):
 🆔 Kodi: <code>{kino_kodi}</code>
 
 Foydalanuvchilar shu kod orqali kinoni topadi. 🍿
+coder: @rahmatullayev_dev
 """)
 
 
